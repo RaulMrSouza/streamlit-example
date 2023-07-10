@@ -15,7 +15,7 @@ if uploaded_file is not None:
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     st.image(image, use_column_width=True)
 
-    if fm < 100:
+    if fm < 30:
         st.write('A imagem está desfocada.')
     else:
         st.write('A imagem não está desfocada.')
