@@ -16,6 +16,6 @@ if uploaded_file is not None:
     st.image(image, use_column_width=True)
 
     if fm < 30:
-        st.write('A imagem está desfocada.')
+        st.write(f'A imagem está desfocada. Nitidez: {fm}')
     else:
-        st.write('A imagem não está desfocada.')
+        st.write(f'A imagem não está desfocada. Nitidez: {fm}')
